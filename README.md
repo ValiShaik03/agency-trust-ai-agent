@@ -56,7 +56,6 @@ Streamlit will automatically open the application in your browser.
 ```
 project-folder/
 │
-
 ├── agency_trust_agent.py
 ├── requirements.txt
 └── README.md
