@@ -64,6 +64,8 @@ project-folder/
 ## Purpose
 This prototype demonstrates the concept of an **Agency Trust & Transparency AI Agent**, which can be integrated into recruitment platforms to improve trust and transparency for job seekers.
 
+## Live Link : https://agencytrustaiagent.streamlit.app/
+
 ## Future Improvements
 - Analyze multiple reviews per agency
 - Use advanced NLP models for sentiment analysis
