@@ -19,8 +19,13 @@ if st.button("Analyze Agency"):
 
         # Risk Keyword Detection
         risk_keywords = [
-            "scam", "fraud", "fake", "unprofessional",
-            "never", "unresponsive", "no response"
+            "scam",
+            "fraud",
+            "fake",
+            "unprofessional",
+            "never",
+            "unresponsive",
+            "no response"
         ]
 
         risk_flag = False
@@ -66,7 +71,22 @@ if st.button("Analyze Agency"):
         else:
             st.error(message + " 🚨")
 
-        # Explainable AI Section
+        # Agent Recommendation (Agentic AI decision step)
+        st.subheader("Agent Recommendation")
+
+        if trust_score >= 8:
+            recommendation = "Recommended Agency"
+            st.success(f"Decision: {recommendation}")
+
+        elif trust_score >= 5:
+            recommendation = "Verify Before Proceeding"
+            st.warning(f"Decision: {recommendation}")
+
+        else:
+            recommendation = "Avoid This Agency"
+            st.error(f"Decision: {recommendation}")
+
+        # Explainable AI
         st.subheader("AI Explanation")
 
         if risk_flag:
